@@ -1,0 +1,512 @@
+*,
+::after,
+::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0
+}
+
+:where(:root) {
+  line-height: 1.15;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif
+}
+
+:where(main) {
+  display: block
+}
+
+:where(h1) {
+  font-size: 2em;
+  margin: .67em 0
+}
+
+:where(p + p) {
+  margin-top: 1rem
+}
+
+:where(a) {
+  background-color: transparent
+}
+
+:where(abbr[title]) {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted
+}
+
+:where(code, kbd, samp, pre) {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+:where(sub, sup) {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline
+}
+
+:where(sub) {
+  bottom: -.25em
+}
+
+:where(sup) {
+  top: -.5em
+}
+
+:where(button, input, optgroup, select, textarea) {
+  line-height: inherit;
+  border: 1px solid currentColor
+}
+
+:where(button) {
+  overflow: visible;
+  text-transform: none
+}
+
+:where(button, [type=button], [type=reset], [type=submit]) {
+  -webkit-appearance: button;
+  padding: 1px 6px
+}
+
+:where(input) {
+  overflow: visible
+}
+
+:where(input, textarea) {
+  padding: 1px
+}
+
+:where(fieldset) {
+  border: 1px solid currentColor;
+  margin: 0 2px
+}
+
+:where(legend) {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal
+}
+
+:where(progress) {
+  display: inline-block;
+  vertical-align: baseline
+}
+
+:where(select) {
+  text-transform: none
+}
+
+:where(textarea) {
+  overflow: auto;
+  vertical-align: top
+}
+
+:where([type=search]) {
+  -webkit-appearance: textfield;
+  outline-offset: -2px
+}
+
+:where([type=color]) {
+  background: inherit
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: .5
+}
+
+::-webkit-file-upload-button,
+::-webkit-search-decoration {
+  -webkit-appearance: button;
+  font: inherit
+}
+
+::-moz-focus-inner {
+  border: 0
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText
+}
+
+:-moz-ui-invalid {
+  box-shadow: none
+}
+
+:where(hr) {
+  box-sizing: content-box;
+  height: 0;
+  color: inherit;
+  overflow: visible
+}
+
+:where(dl, ol, ul) {
+  margin: 1em 0
+}
+
+:where(ol ol, ol ul, ol dl, ul ol, ul ul, ul dl, dl ol, dl ul, dl dl) {
+  margin: 0
+}
+
+:where(b, strong) {
+  font-weight: bolder
+}
+
+:where(audio, video) {
+  display: inline-block
+}
+
+:where(audio):not([controls]) {
+  display: none;
+  height: 0
+}
+
+:where(img) {
+  border: 0
+}
+
+:where(svg):not(:root) {
+  overflow: hidden
+}
+
+:where(table) {
+  text-indent: 0;
+  border-color: inherit
+}
+
+:where(details) {
+  display: block
+}
+
+:where(dialog) {
+  background-color: inherit;
+  border: solid;
+  color: inherit;
+  display: block;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: fit-content
+}
+
+:where(dialog):not([open]) {
+  display: none
+}
+
+:where(summary) {
+  display: list-item
+}
+
+:where(canvas) {
+  display: inline-block
+}
+
+:where(template) {
+  display: none
+}
+
+:where([hidden]) {
+  display: none
+}
+
+
+
+.naxymails {
+  font: 400 18px/1.62 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #444443;
+}
+
+@media (max-width: 1000px) {
+  .naxymails {
+    font-size: 15px;
+  }
+}
+
+.naxymails ::-moz-selection {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.naxymails ::selection {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.naxymails h1,
+.naxymails h2,
+.naxymails h3,
+.naxymails h4,
+.naxymails h5,
+.naxymails h6 {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  color: #222223;
+}
+
+.naxymails h1 {
+  font-size: clamp(1.5rem, 0.6667rem + 2.6667vw, 3rem);
+  margin: 0 0 0.67em 0;
+}
+
+.naxymails>h1 {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+.naxymails h2 {
+  font-size: 1.5em;
+  font-size: clamp(1.2rem, 1.0333rem + 0.5333vw, 1.5rem);
+  margin: 0.83em 0;
+}
+
+.naxymails h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+.naxymails h4,
+.naxymails h5,
+.naxymails h6 {
+  font-size: 1em;
+  margin: 1.6em 0 1em 0;
+}
+
+.naxymails h6 {
+  font-weight: 500;
+}
+
+.naxymails p {
+  margin-top: 0;
+  margin-bottom: 1.46em;
+}
+
+.naxymails a {
+  color: darkorange;
+  word-wrap: break-word;
+  -moz-text-decoration-color: rgba(0, 0, 0, 0.4);
+  text-decoration-color: rgb(231 162 20 / 40%);
+}
+
+.naxymails a:hover {
+  color: #555;
+  -moz-text-decoration-color: rgba(0, 0, 0, 0.6);
+  text-decoration-color: rgba(0, 0, 0, 0.6);
+}
+
+.naxymails h1 a,
+.naxymails h2 a,
+.naxymails h3 a {
+  text-decoration: none;
+}
+
+.naxymails strong,
+.naxymails b {
+  font-weight: 700;
+  color: #222223;
+}
+
+.naxymails em,
+.naxymails i {
+  font-style: italic;
+  color: #222223;
+}
+
+.naxymails img {
+  max-width: 100%;
+  height: auto;
+  margin: 0.2em 0;
+}
+
+.naxymails a img {
+  /* Remove border on IE */
+  border: none;
+}
+
+.naxymails figure {
+  position: relative;
+  clear: both;
+  outline: 0;
+  margin: 10px 0 30px;
+  padding: 0;
+  min-height: 100px;
+}
+
+.naxymails figure img {
+  display: block;
+  max-width: 100%;
+  margin: auto auto 4px;
+  box-sizing: border-box;
+}
+
+.naxymails figure figcaption {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666665;
+}
+
+.naxymails figure figcaption a {
+  text-decoration: none;
+  color: #666665;
+}
+
+.naxymails hr {
+  display: block;
+  width: 14%;
+  margin: 40px auto 34px 0;
+  border: 0 none;
+  border-top: 3px solid #dededc;
+}
+
+.naxymails blockquote {
+  margin: 0 0 1.64em 0;
+  border-left: 3px solid #dadada;
+  padding-left: 12px;
+  color: #666664;
+}
+
+.naxymails blockquote a {
+  color: #666664;
+}
+
+.naxymails ul,
+.naxymails ol {
+  margin: 0 0 24px 6px;
+  padding-left: 16px;
+}
+
+.naxymails ul {
+  list-style-type: square;
+}
+
+.naxymails ol {
+  list-style-type: decimal;
+}
+
+.naxymails li {
+  margin-bottom: 0.2em;
+}
+
+.naxymails li ul,
+.naxymails li ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 14px;
+}
+
+.naxymails li ul {
+  list-style-type: disc;
+}
+
+.naxymails li ul ul {
+  list-style-type: circle;
+}
+
+.naxymails li p {
+  margin: 0.4em 0 0.6em;
+}
+
+.naxymails .unstyled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.naxymails code,
+.naxymails tt {
+  color: #808080;
+  font-size: 0.96em;
+  background-color: #f9f9f7;
+  padding: 1px 2px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  word-wrap: break-word;
+}
+
+.naxymails pre {
+  margin: 1.64em 0;
+  padding: 7px;
+  border: none;
+  border-left: 3px solid #dadada;
+  padding-left: 10px;
+  overflow: auto;
+  line-height: 1.5;
+  font-size: 0.96em;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  color: #4c4c4c;
+  background-color: #f9f9f7;
+}
+
+.naxymails pre code,
+.naxymails pre tt {
+  color: #4c4c4c;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.naxymails table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1.5em;
+  font-size: 0.96em;
+  box-sizing: border-box;
+}
+
+.naxymails th,
+.naxymails td {
+  text-align: left;
+  padding: 4px 8px 4px 10px;
+  border: 1px solid #dadada;
+}
+
+.naxymails td {
+  vertical-align: top;
+}
+
+.naxymails tr:nth-child(even) {
+  background-color: #efefee;
+}
+
+.naxymails iframe {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.naxymails figure iframe {
+  margin: auto;
+}
+
+.naxymails table pre {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+@media (min-width: 1100px) {
+  .naxymails blockquote {
+    margin-left: -24px;
+    padding-left: 20px;
+    border-width: 4px;
+  }
+
+  .naxymails blockquote blockquote {
+    margin-left: 0;
+  }
+}
